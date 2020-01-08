@@ -1,0 +1,8 @@
+version: "3.4"
+services:
+    web:
+        build: .
+        ports: 
+            - 1323:1323
+        volumes: 
+            - ./remote-code-execution:/$GOPATH/src/remote-code-execution
